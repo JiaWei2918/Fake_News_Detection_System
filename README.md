@@ -94,7 +94,7 @@ fake-news-detection/
 
    ```bash
    git clone https://github.com/JiaWei2918/Fake_News_Detection_System.git
-   cd YOUR_REPOSITORY_FOLDER
+   cd Fake_News_Detection_System
    ```
 
 2. Create a virtual environment:
