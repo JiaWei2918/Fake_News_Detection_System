@@ -93,7 +93,7 @@ fake-news-detection/
 1. Clone the repository:
 
    ```bash
-   git clone YOUR_REPOSITORY_URL
+   git clone [YOUR_REPOSITORY_URL](https://github.com/JiaWei2918/Fake_News_Detection_System.git)
    cd YOUR_REPOSITORY_FOLDER
    ```
 
