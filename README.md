@@ -29,12 +29,42 @@ The BiLSTM model was trained using a combined dataset based on:
 
 The datasets were combined for model development. Refer to the original sources for dataset details and licensing conditions.
 
-## Model and Artifacts
-The Streamlit application currently uses:
-- `models/bilstm_savedmodel/` — trained BiLSTM model in TensorFlow SavedModel format.
-- `models/tokenizer.pkl` — tokenizer used to convert text into sequences.
+### Dataset Access
+The combined datasets are stored separately from this GitHub repository because of their file sizes.
 
-Additional model artifacts and Jupyter notebooks are included for comparative experiments and development, where applicable. They are not loaded by the current Streamlit application.
+- **Google Drive — Datasets and Additional Models:** [Access project assets](https://drive.google.com/drive/folders/1fpM-aoLGREI4P0-urBdGFvIkNB4u6f70?usp=drive_link)
+
+Available files include:
+
+- `combined_fake_news.csv`
+- `combined_fake_news_preprocessed.csv`
+
+Please check the original dataset licenses and redistribution conditions before sharing or reusing the data.
+
+## Model and Artifacts
+### BiLSTM — Current Application Model
+The Streamlit application currently uses:
+- `models/bilstm_savedmodel/` — Trained BiLSTM model in TensorFlow SavedModel format.
+- `models/tokenizer.pkl` — Tokenizer used to convert text into sequences.
+
+These files must be available at the expected paths for the application to run.
+
+### Additional Machine-Learning Models
+The following trained models are stored separately on Google Drive for preservation and comparative experiments:
+- `logistic_regression_balanced.pkl`
+- `random_forest_balanced.pkl`
+- `xgboost_balanced.pkl`
+
+**Google Drive — Additional Models:** [Access project assets](https://drive.google.com/drive/folders/19hjcOWW85ue7Iyt8JsSU-vWdf8HT46oG?usp=drive_link)
+
+These models are not loaded by the current Streamlit application.
+
+### DistilBERT Model
+The trained DistilBERT model is hosted separately on Hugging Face because of its file size.
+
+- **Hugging Face — DistilBERT Model:** [View model repository](https://huggingface.co/Reywerd/fake-news-distilbert)
+
+The repository contains the model weights and supporting configuration and tokenizer files. The DistilBERT model is retained for comparative experiments and is not currently loaded by the Streamlit application.
 
 ## Project Structure
 ```text
@@ -86,7 +116,6 @@ fake-news-detection/
    ```
 
 5. Ensure the trained model and tokenizer are available at the paths expected by `app.py`.
-
 ## How to Run
 Start the application:
 
